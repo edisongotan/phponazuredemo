@@ -29,7 +29,7 @@
         try  
         {  
             $conn = OpenConnection();  
-            $tsql = "SELECT * FROM dbo.users";  
+            $tsql = "SELECT * FROM users";  
             $getAll = sqlsrv_query($conn, $tsql);    
             while($row = sqlsrv_fetch_array($getAll, SQLSRV_FETCH_ASSOC))  
             {  
