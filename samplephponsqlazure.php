@@ -12,7 +12,7 @@
         {  
             try  
             {  
-                $serverName = "tcp:azureoss.database.windows.net,1433";  
+                $serverName = "azureoss.database.windows.net,1433";  
                 $connectionOptions = array("Database"=>"azureoss",  
                     "Uid"=>"edisongotan", "PWD"=>"Rachelnavales2016");  
                 $conn = sqlsrv_connect($serverName, $connectionOptions);  
@@ -29,7 +29,7 @@
         try  
         {  
             $conn = OpenConnection();  
-            $tsql = "SELECT * FROM users";  
+            $tsql = "SELECT * FROM dbo.users";  
             $getAll = sqlsrv_query($conn, $tsql);    
             while($row = sqlsrv_fetch_array($getAll, SQLSRV_FETCH_ASSOC))  
             {  
