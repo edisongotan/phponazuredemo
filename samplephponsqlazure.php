@@ -12,7 +12,7 @@
         {  
             try  
             {  
-                $serverName = "tcp:myserver.database.windows.net,1433";  
+                $serverName = "tcp:azureoss.database.windows.net,1433";  
                 $connectionOptions = array("Database"=>"azureoss",  
                     "Uid"=>"edisongotan", "PWD"=>"RachelNavales2016");  
                 $conn = sqlsrv_connect($serverName, $connectionOptions);  
