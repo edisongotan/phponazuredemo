@@ -14,7 +14,7 @@
             {  
                 $serverName = "tcp:azureoss.database.windows.net,1433";  
                 $connectionOptions = array("Database"=>"azureoss",  
-                    "Uid"=>"edisongotan", "PWD"=>"RachelNavales2016");  
+                    "Uid"=>"edisongotan", "PWD"=>"Rachelnavales2016");  
                 $conn = sqlsrv_connect($serverName, $connectionOptions);  
                 if($conn == false)  
                     die(FormatErrors(sqlsrv_errors()));  
